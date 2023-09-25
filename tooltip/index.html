@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>(D) Tooltip Practice</title>
+  </head>
+  <body class="flex flex-col justify-center align-center h-95">
+    <h2 class="mb-4" data-tooltip="color mode">dark mode</h2>
+    <a
+      id="interact"
+      href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/tooltip_role"
+      target="_blank"
+      tabindex="0"
+      class="button"
+      aria-label="click to interact"
+      data-tooltip="don't be scared"
+    >
+      MDN Tooltip Docs
+    </a>
+    <script src="index.js"></script>
+  </body>
+</html>

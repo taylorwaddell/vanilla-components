@@ -1,0 +1,41 @@
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.h-95 {
+  height: 95vh;
+}
+
+.button {
+  background-color: transparent;
+  color: rgb(100, 100, 100);
+  border: 2px solid rgb(230, 230, 230);
+  border-radius: 4px;
+  padding: 4px 8px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: rgb(245, 245, 245);
+}
+
+.button:hover:active {
+  background-color: rgb(235, 235, 235);
+  border-color: rgb(220, 220, 220);
+}

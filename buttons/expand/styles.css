@@ -1,0 +1,57 @@
+:root {
+  --dynamicTextControl: inline-block;
+}
+
+html,
+* {
+  background-color: rgb(30, 30, 30);
+  color: rgb(200, 200, 200);
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.h-95 {
+  height: 95vh;
+}
+
+.button {
+  background-color: transparent;
+  border: 2px solid rgb(55, 55, 55);
+  border-radius: 4px;
+  padding: 4px 8px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: rgb(35, 35, 35);
+}
+
+.button:hover:active {
+  background-color: rgb(45, 45, 45);
+  border-color: rgb(65, 65, 65);
+}
+
+.dynamic > .text {
+  display: var(--dynamicTextControl);
+  width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
