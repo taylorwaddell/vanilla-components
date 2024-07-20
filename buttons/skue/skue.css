@@ -1,0 +1,27 @@
+/* inspo: https://www.figma.com/community/file/1218508836788518441/skeuo-button */
+
+:root {
+  --orange-light: #eb7c53;
+  --orange-base: #e75c29;
+  --orange-dark: #d05122;
+  --orange-darker: #bd4a20;
+  --orange-darkest: #bd4a20;
+
+  --box-shadow-border: 0px 0px 0px 2px var(--orange-darkest);
+}
+
+.skeuomorphism-orange {
+  background-color: var(--orange-base);
+  border: none; /* Get rid of default border. */
+  box-shadow: var(--box-shadow-border), inset 0 1px 1px 0px var(--orange-light),
+    inset 0 -1px 1px var(--orange-dark);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.skeuomorphism-orange:active {
+  box-shadow: var(--box-shadow-border), inset 1px 1px 1px 1px var(--orange-dark),
+    inset -1px -1px 1px 0px var(--orange-darker);
+}

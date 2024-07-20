@@ -1,0 +1,55 @@
+.card-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  height: 500px;
+}
+
+.card {
+  height: 100%;
+  flex-grow: 1;
+  transition: flex-grow ease-in-out 150ms;
+}
+
+.card:hover {
+  flex-grow: 2;
+}
+
+/* aesthetics */
+body {
+  background-color: #3c3c3c;
+}
+
+.card {
+  display: flex;
+  justify-content: end;
+  padding: 15px;
+  border-radius: 1rem;
+  border: 0.5rem solid #3c3c3c;
+}
+
+.card span {
+  height: fit-content;
+  font-size: 2rem;
+  line-height: 0.75;
+  transition: transform ease-in-out 150ms;
+}
+.card:hover span {
+  transform: rotate(-45deg);
+}
+
+.card.lemon {
+  background-color: lemonchiffon;
+}
+.card.yellow {
+  background-color: yellow;
+}
+.card.orange {
+  background-color: orange;
+}
+.card.orangeRed {
+  background-color: orangered;
+}
+.card.red {
+  background-color: red;
+}
